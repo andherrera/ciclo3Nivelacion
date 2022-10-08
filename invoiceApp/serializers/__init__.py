@@ -1,0 +1,2 @@
+from .clienteSerializer import ClienteSerializer
+from .usuarioSerializer import UsuarioSerializer
