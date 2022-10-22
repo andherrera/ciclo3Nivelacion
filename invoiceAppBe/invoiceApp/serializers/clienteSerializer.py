@@ -4,4 +4,4 @@ from invoiceApp.models.cliente import Cliente
 class ClienteSerializer(serializers.ModelSerializer):
     class Meta:
         model = Cliente
-        fields = ['email', 'user']
+        fields = '__all__'

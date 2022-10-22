@@ -1,1 +1,0 @@
-from .clienteView import ClientListCreateView

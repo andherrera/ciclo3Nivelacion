@@ -1,0 +1,7 @@
+from .clienteView import ClientListCreateView, ClienteRetrieveUpdateView
+from .empleadoView import EmpleadoListCreateView, EmpleadoRetrieveUpdateView
+from .proveedorView import ProveedorListCreateView, ProveedorRetrieveUpdateView
+from .productoView import ProductoCreateView, ProductoRetrieveUpdateDeleteView
+from .facturaView import facturaListCreate, facturaRetrieveDelete
+from .compraView import CompraCreateView
+from .usuarioView import UsuarioRetrieveUpdateDeleteView
