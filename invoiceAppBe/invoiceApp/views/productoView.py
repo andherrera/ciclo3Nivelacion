@@ -11,6 +11,11 @@ class ProductoCreateView(views.APIView):
             return Response(serializar.data,status=status.HTTP_201_CREATED)
         return Response(serializar.errors,status=status.HTTP_400_BAD_REQUEST)
 
+    def get(self, request):
+        modelo=Producto.objects.all()
+        serializer=ProductoSerializer(modelo, many=True)
+        return Response(serializer.data)
+
 class ProductoRetrieveUpdateDeleteView(views.APIView):
 
     def get(self, request, pk, format=None):
